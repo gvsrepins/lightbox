@@ -1,0 +1,38 @@
+body{background: #eeebe9}
+
+/*Estrutura do Layout*/
+#main{	
+	width: 1000px;
+	margin: auto;
+	min-height: 600px;
+	position: relative;
+}
+
+#header{
+height: 267px;	
+	background: #2f231e;		
+}
+
+#content{
+	min-height: 350px;
+	background: #f7f5f4;
+}
+
+#footer{
+	background: #291e18;
+	height: 94px;
+	width: 1000px;
+	margin: auto;
+}
+
+#headerExtended{
+	background: url(../images/bg.jpg);
+ 	width: 100%;
+ 	height: 453px;
+ 	position: absolute; 	  	
+}
+
+#footerExtended{
+	background: #3b2c25;
+	width: 100%;
+}
