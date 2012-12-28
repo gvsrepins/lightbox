@@ -8,11 +8,23 @@ body{background: #eeebe9}
 	position: relative;
 }
 
-#header{
-height: 267px;	
-	background: #2f231e;		
+#header-container{
+	height: 213px;
+	background: #2f2420;
+	padding: 0px;
+	margin:0px;
+	padding-top: 53px;
 }
 
+#header{
+	background: #2f231e;
+	height: 214px;
+	border: solid 1px #60483c;
+	border-bottom: none;
+}
+
+#header h3{color: #a68a7d; font-size: 18px; font-family: Helvetica; font-weight: normal;}
+#header h3 a{color: #fff; text-decoration: none;}
 #content{
 	min-height: 350px;
 	background: #f7f5f4;
@@ -26,7 +38,7 @@ height: 267px;
 }
 
 #headerExtended{
-	background: url(../images/bg.jpg);
+	background: url(../images/bg.jpg) repeat-x;
  	width: 100%;
  	height: 453px;
  	position: absolute; 	  	
@@ -36,3 +48,46 @@ height: 267px;
 	background: #3b2c25;
 	width: 100%;
 }
+
+#logo{
+	position: relative; 
+	top:-140px; 
+	left: -30px; 
+	width: 300px;
+	float:left;
+	margin-right: 30px;	
+}
+#logo-text{position: absolute; bottom:110px; right: -30px;}
+
+/*Begin main menu*/
+#nav{float:right; position: relative; left: 50px; top:-20px;}
+#nav ul{
+	list-style: none; 
+	display: inline;
+}
+
+#nav li{ 
+	display: inline;
+	float:left;	
+	margin-right: 90px;	
+}
+
+#nav a{
+	color: #c7b18d;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	
+	background: url('../images/menu-sprite.png') no-repeat;
+	padding-top: 45px;
+
+	width: 37px;
+	height:15px;	
+}
+
+#nav #home{background-position: 0px 0px;}
+#nav #work{background-position: -37px 0px;}
+#nav #about{background-position: -74px 0px;}
+#nav #contact{background-position: -111px 0px;}
+/*End main menu*/
