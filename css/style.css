@@ -38,7 +38,7 @@ body{background: #eeebe9}
 }
 
 #headerExtended{
-	background: url(../images/bg.jpg) repeat-x;
+	background: url(../img/bg.jpg) repeat-x;
  	width: 100%;
  	height: 453px;
  	position: absolute; 	  	
@@ -79,7 +79,7 @@ body{background: #eeebe9}
 	text-decoration: none;
 	display: block;
 	
-	background: url('../images/menu-sprite.png') no-repeat;
+	background: url('../img/menu-sprite.png') no-repeat;
 	padding-top: 45px;
 
 	width: 37px;
