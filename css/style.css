@@ -1,18 +1,49 @@
 body{background: #eeebe9}
 
+* {	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 /* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
 @font-face {
 	font-family:"Duepuntozero";
 	src:url("fonts/duepuntozero_regular.eot?") format("eot"),
 	url("fonts/duepuntozero_regular.woff") format("woff"),
 	url("fonts/duepuntozero_regular.ttf") format("truetype"),
-	url("fonts/duepuntozero_regular.svg#Duepuntozero") format("svg");
+	url("fonts/duepuntozero_regular.svg.Duepuntozero") format("svg");
 	font-weight:normal;
 	font-style:normal;
 }
 
 /*Util*/
+
+
+/**
+ * Clearfix helpers
+ */
 .clear{clear: both;}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+
 
 /*Formating*/
 
@@ -25,67 +56,67 @@ h2{
 }
 
 /*Estructure of Layout*/
-#main{	
+.main{	
 	width: 1000px;
 	margin: auto;
 	min-height: 600px;
 	position: relative;
 }
 
-#headerContainer{
-	height: 213px;
+.headerContainer{
+	height: 266px;
 	background: #2f2420;
 	padding: 0px;
 	margin:0px;
 	padding-top: 53px;
 }
 
-#header{
+.header{
 	background: #2f231e;
-	height: 214px;
+	height: 215px;
 	border: solid 1px #60483c;
 	border-bottom: none;	
 }
 
-#header h3{	
+.header h3{	
 	float:left;
 	color: #a68a7d;
 	font-size: 19px; 
 	font-family: Helvetica; 
 	font-weight: normal;	
-	width: 510px;
+	width: 546px;
 	text-align: justify;
 	padding: 10px;
 	padding-left: 25px;
 	border-left: 1px solid #4e3b33;	
 }
 
-#header h3 a{color: #fff; text-decoration: none;}
-#content{
+.header h3 a{color: #fff; text-decoration: none;}
+.content{
 	min-height: 350px;
 	background: #f7f5f4;	
 }
 
-#footer{
+.footer{
 	background: #291e18;
 	height: 94px;
 	width: 1000px;
 	margin: auto;
 }
 
-#headerExtended{
+.headerExtended{
 	background: url(../img/bg.jpg) repeat-x;
- 	width: 100%;
- 	height: 453px;
- 	position: absolute; 	  	
+	width: 100%;
+	height: 453px;
+	position: absolute; 	  	
 }
 
-#footerExtended{
+.footerExtended{
 	background: #3b2c25;
 	width: 100%;
 }
 
-#logo{
+.logo{
 	position: relative; 
 	top:-140px; 
 	left: -30px; 
@@ -93,22 +124,22 @@ h2{
 	float:left;
 	margin-right: 30px;	
 }
-#logo-text{position: absolute; bottom:110px; right: -30px;}
+.logo-text{position: absolute; bottom:110px; right: -30px;}
 
 /*Begin main menu*/
-#nav{float:right; position: relative; left: 50px; top:-20px;}
-#nav ul{
+.nav{float:right; position: relative; left: 50px; top:-20px;}
+.nav ul{
 	list-style: none; 
 	display: inline;
 }
 
-#nav li{ 
+.nav li{ 
 	display: inline;
 	float:left;	
 	margin-right: 90px;	
 }
 
-#nav a{
+.nav a{
 	color: #c7b18d;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -119,13 +150,13 @@ h2{
 	padding-top: 45px;
 
 	width: 37px;
-	height:15px;	
+	height:60px;	
 }
 
-#nav #home{background-position: 0px 0px;}
-#nav #work{background-position: -37px 0px;}
-#nav #about{background-position: -74px 0px;}
-#nav #contact{background-position: -111px 0px;}
+.nav .home{background-position: 0px 0px;}
+.nav .work{background-position: -37px 0px;}
+.nav .about{background-position: -74px 0px;}
+.nav .contact{background-position: -111px 0px;}
 /*End main menu*/
 
 
@@ -140,21 +171,21 @@ h2{
 	color: #745459;
 	font-family: Duepuntozero;
 	background: url('../img/what-we-do.png') no-repeat;
-	padding-left: 53px; 
-	height: 26px;	
+	padding-left: 53px;
+	height: 36px;	
 	padding-top: 10px;
 	margin-bottom: 15px;
 }
 
-.whatWeDo dl dt#web{
+.whatWeDo dl dt.web{
 	background-position: 0px 0px;
-	height: 23px;
+	height: 33px;
 }
-.whatWeDo dl dt#graphic{
+.whatWeDo dl dt.graphic{
 	background-position: 0px -35px;
-	height: 23px;
+	height: 33px;
 }
-.whatWeDo dl dt#usability{background-position: 0px -68px;}
+.whatWeDo dl dt.usability{background-position: 0px -68px;}
 
 .whatWeDo dl dd{
 	font-size: 13px;
@@ -164,6 +195,6 @@ h2{
 
 .quotes{
 	float:left;
-	width: 270px;	
+	width: 270px;
 	margin-left: 10px;
 }
